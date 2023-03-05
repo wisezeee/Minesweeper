@@ -1,0 +1,300 @@
+:root {
+    --main-bg-color: #c0c0c0;
+    --timer-bg-color: black;
+    --field-bg-color: #7b7b7b;
+}
+
+.app {
+    width: 274px;
+    background-color: var(--main-bg-color);
+    background: url("assets/background.png") no-repeat;
+    background-size: 100%;
+    position: absolute;
+}
+.container {
+    position: fixed;
+    left: 37%;
+    top: 20%;
+}
+
+.timer-mins {
+    width: 39px;
+    height: 23px;
+    background: var(--timer-bg-color);
+    margin: 0;
+    display: inline-block;
+    margin-left: 14px;
+    padding: 0;
+}
+
+.timer-secs {
+    width: 39px;
+    height: 23px;
+    background: var(--timer-bg-color);
+    margin: 0;
+    display: inline-block;
+    margin-right: 14px;
+    padding: 0;
+}
+
+.hundred {
+    float: left;
+    margin: 0;
+    width: 13px;
+    height: 23px;
+    background: url("assets/sprite.png");
+    background-position: -126px top;
+}
+#min_ten {
+    float: left;
+    margin: 0;
+    width: 13px;
+    height: 23px;
+    padding: 0;
+}
+#min_one {
+    float: right;
+    margin: 0;
+    width: 13px;
+    height: 23px;
+    padding: 0;
+}
+
+#sec_ten {
+    float: left;
+    margin: 0;
+    width: 13px;
+    height: 23px;
+    padding: 0;
+}
+#sec_one {
+    float: right;
+    margin: 0;
+    width: 13px;
+    height: 23px;
+    padding: 0;
+}
+
+.time_0 {
+    background: url("assets/sprite.png");
+    background-position: -126px top;
+}
+.time_1 {
+    background: url("assets/sprite.png");
+    background-position: 0 top;
+}
+.time_2 {
+    background: url("assets/sprite.png");
+    background-position: -14px top;
+}
+.time_3 {
+    background: url("assets/sprite.png");
+    background-position: -28px top;
+}
+.time_4 {
+    background: url("assets/sprite.png");
+    background-position: -42px top;
+}
+.time_5 {
+    background: url("assets/sprite.png");
+    background-position: -56px top;
+}
+.time_6 {
+    background: url("assets/sprite.png");
+    background-position: -70px top;
+}
+.time_7 {
+    background: url("assets/sprite.png");
+    background-position: -84px top;
+}
+.time_8 {
+    background: url("assets/sprite.png");
+    background-position: -98px top;
+}
+.time_9 {
+    background: url("assets/sprite.png");
+    background-position: -112px top;
+}
+
+.smiley {
+    width: 26px;
+    height: 26px;
+    margin: 12px 65px 0;
+    padding: 0;
+    background: url("assets/sprite.png");
+    background-position: 0px -24px;
+    position: relative;
+    display: inline-block;
+}
+
+.smiley_clicked {
+    background: url("assets/sprite.png");
+    background-position: -27px -24px;
+    position: relative;
+    width: 26px;
+    height: 26px;
+    margin: 12px 65px 0;
+    display: inline-block;
+}
+.smiley_sc {
+    background: url("assets/sprite.png");
+    background-position: -54px -24px;
+    position: relative;
+    width: 26px;
+    height: 26px;
+    margin: 12px 65px 0;
+    display: inline-block;
+}
+.smiley_dead {
+    background: url("assets/sprite.png");
+    background-position: -108px -24px;
+    position: relative;
+    width: 26px;
+    height: 26px;
+    margin: 12px 65px 0;
+    display: inline-block;
+}
+.smiley_cool {
+    background: url("assets/sprite.png");
+    background-position: -81px -24px;
+    position: relative;
+    width: 26px;
+    height: 26px;
+    margin: 12px 65px 0;
+    display: inline-block;
+}
+
+.field {
+    display: grid;
+    grid-template-columns: repeat(16, 16px);
+    margin: 0 auto;
+    padding: 9px 8px 8px;
+    position: relative;
+    border-top: 2px var(--field-bg-color);
+    border-left: 2px var(--field-bg-color);
+}
+button {
+    height: 16px;
+    font-size: 10px;
+    border: none;
+}
+
+.unclicked_btn {
+    background: url("assets/sprite.png");
+    background-position: 0px -51px;
+    width: 16px;
+    height: 16px;
+    padding: 0px 0px;
+    margin: 0px 0px;
+    border: 0.5px;
+}
+
+.clicked_btn {
+    background: url("assets/sprite.png");
+    background-position: -17px -51px;
+    width: 16px;
+    height: 16px;
+    margin: 0%;
+    border: var(--field-bg-color);
+}
+
+.count_1 {
+    background: url("assets/sprite.png");
+    background-position: 0px -68px;
+    width: 16px;
+    height: 16px;
+    margin: 0%;
+}
+.count_2 {
+    background: url("assets/sprite.png");
+    background-position: -17px -68px;
+    width: 16px;
+    height: 16px;
+    margin: 0%;
+}
+.count_3 {
+    background: url("assets/sprite.png");
+    background-position: -34px -68px;
+    width: 16px;
+    height: 16px;
+    margin: 0%;
+}
+.count_4 {
+    background: url("assets/sprite.png");
+    background-position: -51px -68px;
+    width: 16px;
+    height: 16px;
+    margin: 0%;
+}
+.count_5 {
+    background: url("assets/sprite.png");
+    background-position: -68px -68px;
+    width: 16px;
+    height: 16px;
+    margin: 0%;
+}
+.count_6 {
+    background: url("assets/sprite.png");
+    background-position: -85px -68px;
+    width: 16px;
+    height: 16px;
+    margin: 0%;
+}
+.count_7 {
+    background: url("assets/sprite.png");
+    background-position: -102px -68px;
+    width: 16px;
+    height: 16px;
+    margin: 0%;
+}
+.count_8 {
+    background: url("assets/sprite.png");
+    background-position: -119px -68px;
+    width: 16px;
+    height: 16px;
+    margin: 0%;
+}
+
+.bomb {
+    background: url("assets/sprite.png");
+    background-position: -85px -51px;
+    width: 16px;
+    height: 16px;
+    margin: 0%;
+    border: none;
+}
+.bomb_exploded {
+    background: url("assets/sprite.png");
+    background-position: -102px -51px;
+    width: 16px;
+    height: 16px;
+    margin: 0%;
+}
+.wrong_bomb {
+    background: url("assets/sprite.png");
+    background-position: -119px -51px;
+    width: 16px;
+    height: 16px;
+    margin: 0%;
+}
+.flag {
+    background: url("assets/sprite.png");
+    background-position: -34px -51px;
+    width: 16px;
+    height: 16px;
+    margin: 0%;
+}
+.question_mark {
+    background: url("assets/sprite.png");
+    background-position: -51px -51px;
+    width: 16px;
+    height: 16px;
+    margin: 0%;
+}
+.question_mark_clicked {
+    background: url("assets/sprite.png");
+    background-position: -68px -51px;
+    width: 16px;
+    height: 16px;
+    margin: 0%;
+}
